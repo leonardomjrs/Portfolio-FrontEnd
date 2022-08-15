@@ -1,13 +1,40 @@
-<div class="container">
-    <div class="row">
-      <div class="col">
-        Column
-      </div>
-      <div class="col">
-        Column
-      </div>
-      <div class="col">
-        Column
-      </div>
+<nav  id="nav" class="d-md-none">
+  <label>
+    <input type="checkbox">
+    <span class="menu">
+      <span class="hamburger"></span>
+    </span>
+    <ul>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#experience">Experience</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#footer">Contact</a>
+      </li>
+    </ul>
+  </label>
+</nav> 
+
+<div *ngIf="showNav" id="site-header" class="d-none d-md-block navi fixed-top container-fluid animate__animated animate__fadeIn animate__slower">
+  <header class="container col-10 col-md-5 px-0">
+    <div class="logo">
+      <a href="#home"></a>
     </div>
-  </div>
+    <nav>
+      <a href="#about" class="nav-link link link--metis">About</a>
+      <a href="#experience" class="nav-link link link--metis">Experience</a>
+      <a href="#projects" class="nav-link link link--metis">Projects</a>
+      <a href="#skills" class="nav-link link link--metis">Skills</a>
+      <a href="#footer" class="nav-link link link--metis me-0">Contact</a>
+    </nav>
+  </header>
+</div>
