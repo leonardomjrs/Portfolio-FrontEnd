@@ -26,8 +26,8 @@
 
 <div *ngIf="showNav" id="site-header" class="d-none d-md-block navi fixed-top container-fluid animate__animated animate__fadeIn animate__slower">
   <header class="container col-10 col-md-5 px-0">
-    <div class="logo">
-      <a href="#home"></a>
+    <div *ngIf="showLogo" class="logo">
+      <a href="#home"><img src="../../../assets/LMLOGO.svg" alt=""></a>
     </div>
     <nav>
       <a href="#about" class="nav-link link link--metis">About</a>

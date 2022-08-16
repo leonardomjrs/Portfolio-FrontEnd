@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
 
  showNav= true;
  otherScroll = window.pageYOffset;
+ showLogo= false;
 
   x= fromEvent(document, 'scroll');
 
@@ -19,12 +20,18 @@ export class HeaderComponent implements OnInit {
       const scroll = res.target.documentElement.scrollTop;
       console.log(scroll);
 
-      if (scroll>10){
+
+      if (scroll>1){
         this.showNav = false;
       }
       if (scroll< this.otherScroll){
         this.showNav = true;
+        this.showLogo = true;
       }
+      if (scroll<600){
+        this.showLogo = false;
+      }
+
       this.otherScroll = scroll;
     });
    }
