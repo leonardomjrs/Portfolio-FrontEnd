@@ -1,3 +1,40 @@
-p {
-    height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: #e4e4e4;
+  overflow-x: hidden;
 }
+
+img {
+    width: 35%;
+    border-radius: 100%;
+    border-style: ridge;
+}
+
+.row{
+    max-width: 100vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.about__title{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    margin: auto;
+    max-width: 80%;
+}
+
+.about__name, .about__prof{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .about__text {
+    font-size: 20px;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 14px;
+    max-width: 80%;
+  }

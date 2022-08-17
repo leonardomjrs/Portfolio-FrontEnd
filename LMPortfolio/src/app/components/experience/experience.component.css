@@ -1,0 +1,156 @@
+.experience {
+    background-color: #fff;
+    border-radius: 3%;
+    min-height: 755px;
+}
+
+.experience__textHolder {
+    text-align: center;
+}
+
+.experience__title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.experience__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.experience__iconNtitle:hover {
+    color: #8b72af !important;
+    filter: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%);
+}
+
+.experience__iconNtitle p {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.experience__iconNtitle img {
+    width: 25px;
+    margin-right: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .experience__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience__container div {
+        padding: 5px 0;
+    }
+}
+
+#workTimeline {
+    display: none;
+}
+
+.containerTimeline {
+    width: 80%;
+    padding: 0 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    min-height: 423px;
+}
+
+.containerTimeline:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    margin-left: -1px;
+    width: 1.5px;
+    height: 84%;
+    background: #c1c1c1;
+    z-index: 1;
+}
+
+.timeline-block {
+    width: calc(50% + 8px);
+    display: flex;
+    justify-content: space-between;
+    clear: both;
+}
+
+.timeline-block-right {
+    float: right;
+}
+
+.timeline-block-left {
+    float: left;
+    direction: rtl;
+}
+
+.marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #f5f7fa;
+    background: #8b72af;
+    margin-top: 3px;
+    z-index: 1;
+}
+
+.timeline-content {
+    width: 95%;
+    padding: 0 15px;
+    color: #666;
+}
+
+.timeline-content p:nth-child(1) {
+    margin-bottom: -2px;
+    font-size: 15px !important;
+    font-weight: 500;
+    color: black;
+}
+
+.timeline-content span {
+    font-size: 14px;
+    color: #666;
+}
+
+.timeline-content p {
+    font-size: 13px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: #888;
+    margin-bottom: 0;
+}
+
+#workTimeline .timeline-content p {
+    font-size: 13.5px;
+}
+
+.containerTimeline--work:before {
+    height: 51% !important;
+}
+
+.timeline-text {
+    color: #353232 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .containerTimeline:before {
+        left: 8px;
+        width: 2px;
+    }
+
+    .timeline-block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .timeline-block-right {
+        float: none;
+    }
+
+    .timeline-block-left {
+        float: none;
+        direction: ltr;
+    }
+}
